@@ -14,8 +14,8 @@ jobs:
           include:
             - env: pico
               bin_ext: uf2
-            - env: lbx
-              bin_ext: hex
+            # - env: lbx
+            #   bin_ext: hex
 
     steps:
     - name: Check out source code
