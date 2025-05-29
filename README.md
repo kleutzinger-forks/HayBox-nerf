@@ -1,5 +1,7 @@
 # HayBox Limited Edition
 
+mods by kevin
+
 This is a firmware designed to comply with the proposed controller ruleset for Melee based on Haystack's HayBox.
 
 Downloads are available at https://github.com/CarVac/HayBox/releases.
@@ -21,26 +23,42 @@ HayBox is a modular, cross-platform firmware for digital or mixed analog/digital
 
 ## Table of Contents
 
-* [Features](#features)
-* [Getting Started](#getting-started)
-  * [Requirements](#requirements)
-  * [Installation](#installation)
-* [Usage](#usage)
-  * [Default button holds](#default-button-holds)
-  * [Dolphin setup](#dolphin-setup)
-* [Customisation](#customisation)
-  * [Console/gamemode selection bindings](#consolegamemode-selection-bindings)
-  * [Creating custom input modes](#creating-custom-input-modes)
-  * [Mod X lightshield and R shield tilt](#mod-x-lightshield-and-r-shield-tilt)
-  * [Mode-specific optional features](#mode-specific-optional-features)
-    * [Melee modes](#melee-modes)
-    * [Project M/Project+ mode](#project-mproject-mode)
-  * [Input sources](#input-sources)
-  * [Using the Pico's second core](#using-the-picos-second-core)
-* [Troubleshooting](#troubleshooting)
-* [Contributing](#contributing)
-* [Contributors](#contributors)
-* [License](#license)
+- [HayBox Limited Edition](#haybox-limited-edition)
+- [HayBox](#haybox)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+  - [Usage](#usage)
+    - [Default button holds](#default-button-holds)
+      - [Pico bootsel mode](#pico-bootsel-mode)
+      - [Brook board passthrough mode](#brook-board-passthrough-mode)
+      - [Communication backends (console selection)](#communication-backends-console-selection)
+      - [Game mode selection](#game-mode-selection)
+    - [Dolphin setup](#dolphin-setup)
+  - [Customisation](#customisation)
+    - [Console/gamemode selection bindings](#consolegamemode-selection-bindings)
+      - [Communication backends (console selection)](#communication-backends-console-selection-1)
+      - [Input modes](#input-modes)
+    - [Creating custom input modes](#creating-custom-input-modes)
+      - [Keyboard modes](#keyboard-modes)
+      - [Controller modes](#controller-modes)
+    - [SOCD](#socd)
+    - [Mod X lightshield and R shield tilt](#mod-x-lightshield-and-r-shield-tilt)
+    - [Mode-specific optional features](#mode-specific-optional-features)
+      - [Melee modes](#melee-modes)
+      - [Project M/Project+ mode](#project-mproject-mode)
+    - [Input sources](#input-sources)
+    - [Using the Pico's second core](#using-the-picos-second-core)
+  - [Troubleshooting](#troubleshooting)
+    - [Controller not working with console or GameCube adapter](#controller-not-working-with-console-or-gamecube-adapter)
+  - [Contributing](#contributing)
+    - [Versioning](#versioning)
+  - [Built With](#built-with)
+  - [Contributors](#contributors)
+    - [Acknowledgments](#acknowledgments)
+  - [License](#license)
 
 ## Features
 
